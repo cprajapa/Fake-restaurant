@@ -1,9 +1,10 @@
 function removeLoader() {
-    let loaderDiv = document.getElementById("loaderDiv");
-    loaderDiv.style.display = "none";
+    loaderDiv = document.getElementById("loaderDiv");
     loaderDiv.remove();
 }
 function onDivLoad() {
-    console.log("Div loaded");
-    setTimeout(removeLoader, 3000); //wait for page load PLUS two seconds.
+    setTimeout(removeLoader, 1500);
+}
+function afterLoading() {
+	
 }
