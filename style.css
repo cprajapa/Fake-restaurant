@@ -1,0 +1,82 @@
+html {
+	background-color: beige;
+}
+
+#musicButton {
+	color: blue;
+	border: none;
+	position: fixed;
+	background-color: moccasin;
+	text-decoration-line-line: none;
+	left: 70%;
+	top: 70%;
+	padding: 1% 2%;
+	opacity: 75%;
+}
+
+#musicButton:hover {
+	text-decoration-line: underline;
+}
+
+#title, .text {
+	color: sandybrown;
+	position: fixed;
+	top: 17%;
+}
+
+#title {
+	top: 5%;
+	left: 50%;
+}
+
+#line {
+	position: fixed;
+	border-bottom: 2px solid sandybrown;
+	top: 15%;
+	left: 15%;
+	width: 75%;
+}
+
+.text {
+	font-size: large;
+}
+
+.text:hover {
+	text-decoration-line: underline;
+}
+
+#about {
+	left: 30%;
+}
+
+#menu {
+	left: 45%;
+}
+
+#shop {
+	left: 60%;
+}
+
+#contact {
+	left: 75%;
+}
+
+video {
+	position: fixed;
+	border: none;
+	top: 25%;
+	height: 50%;
+}
+
+#video1 {
+	left: 10%;
+}
+
+#video2 {
+	top: 30%;
+	left: 45%;
+}
+
+#video3 {
+	left: 75%;
+}

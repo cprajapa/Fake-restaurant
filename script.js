@@ -1,39 +1,31 @@
-tr = document.getElementById("menuRow")
+audioLink = document.getElementById("audioLink");
+musicButton = document.getElementById("musicButton");
 
-about = document.createElement("td");
-aboutText = document.createTextNode("About")
-about.appendChild(aboutText);
-about.style.left = "30%";
+loaderDiv = document.createElement("div");
 
-tr.appendChild(about);
+loaderDiv.style.opacity = "1";
+loaderDiv.style.width = "120px";
+loaderDiv.style.height = "120px";
+loaderDiv.style.position = "fixed";
+loaderDiv.style.border = "16px solid lightgray";
+loaderDiv.style.borderTop = "16px solid blue";
+loaderDiv.style.animation = "spin 2s linear infinite";
+loaderDiv.style.top = "50%";
+loaderDiv.style.left = "50%";
+loaderDiv.style.borderRadius = "50%";
 
-menu = document.createElement("td");
-menuText = document.createTextNode("Menu")
-menu.appendChild(menuText);
-menu.style.left = "45%";
+css = window.document.styleSheets[0];
 
-tr.appendChild(menu);
+css.insertRule(`@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }}`);
 
-shop = document.createElement("td");
-shopText = document.createTextNode("Shop")
-shop.appendChild(shopText);
-shop.style.left = "60%";
+document.body.appendChild(loaderDiv);
 
-tr.appendChild(shop);
-
-contact = document.createElement("td");
-contactText = document.createTextNode("Contact")
-contact.appendChild(contactText);
-contact.style.left = "75%";
-
-tr.appendChild(contact);
-
-function onLoad() {
-    setTimeout(function () {
-        let loaderDiv = document.getElementById("loaderDiv")
-        loaderDiv.remove();
-    }, 3000);
-}
+document.onload(setTimeout(function() {
+		loaderDiv.style.opacity = "0";
+	}, 1500))
 
 // function afterLoad() {
 //     setTimeout(function () {
@@ -42,14 +34,15 @@ function onLoad() {
 //     }, 1500);
 // }
 function toggleMusic() {
-    let audioLink = document.getElementById("audioLink");
-    console.log("audioLink.paused = " + audioLink.paused);
-
-    if (audioLink.paused) {
-        audioLink.play();
-        audioLink.paused = false;
-    } else {
-        audioLink.pause();
-        audioLink.paused = true;
-    }
+	
+	if (audioLink.paused) {
+		audioLink.play();
+		audioLink.paused = false;
+		musicButton.innerHTML = "Pause: Coffee Shop Music";
+	}
+	else {
+		audioLink.pause();
+		audioLink.paused = true;
+		musicButton.innerHTML = "Play: Coffee Shop Music";
+	}
 }
