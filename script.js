@@ -24,8 +24,8 @@ css.insertRule(`@keyframes spin {
 document.body.appendChild(loaderDiv);
 
 document.onload(setTimeout(function() {
-		loaderDiv.style.opacity = "0";
-	}, 1500))
+	loaderDiv.style.opacity = "0";
+}, 1500))
 
 // function afterLoad() {
 //     setTimeout(function () {
@@ -34,7 +34,7 @@ document.onload(setTimeout(function() {
 //     }, 1500);
 // }
 function toggleMusic() {
-	
+
 	if (audioLink.paused) {
 		audioLink.play();
 		audioLink.paused = false;
