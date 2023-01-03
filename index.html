@@ -2,16 +2,32 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Coffee Shop</title>
-	<script src="script.js"></script>
-	<link href="style.css" rel="stylesheet" type="text/css" onload="onDivLoad()" />
-	<link href="onload.css" rel="stylesheet" type="text/css"/>
-</head>
-<body onload>
-	<div id="loaderDiv"></div>
-	<button class="music" type="button"> Coffee Shop Music </button>
-</body>
+    <meta charset="utf-8">
+    <meta content="width=device-width" name="viewport">
+    <title> Chirag's Cafe 🍵 </title>
+    <script src="script.js"></script>
+    <link href="CSS/style.css" onload="onLoad()" rel="stylesheet" type="text/css"/>
+    <link href="CSS/onload.css" onload="function afterLoad() {
 
+    }
+    afterLoad()" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<h1 id="title"> Chirag's Cafe 🍵 </h1>
+<div id="line"></div>
+<table>
+    <tr id="menuRow">
+        <!--        <td class="text" id="about"> About </td>-->
+        <!--        <td class="text" id="menu1"> Menu </td>-->
+        <!--        <td class="text" id="shop"> Shop </td>-->
+        <!--        <td class="text" id="contact"> Contact </td>-->
+    </tr>
+</table>
+<video autoplay controls id="video1" src="coffeeBrewing.mp4"></video>
+<video autoplay controls id="video2" src="coffeeBeans.mp4"></video>
+<video autoplay controls id="video3" src="coffeeFoaming.mp4"></video>
+<audio id="audioLink" src="coffeeShopMusic.mp3"></audio>
+<button class="music" onclick="toggleMusic()" type="button">Coffee Shop Music</button>
+</body>
+<div id="loaderDiv"></div>
 </html>
