@@ -1,82 +1,84 @@
-html {
-	background-color: beige;
+#table {
+    opacity: 0;
 }
 
-#musicButton {
-	color: blue;
-	border: none;
-	position: fixed;
-	background-color: moccasin;
-	text-decoration-line-line: none;
-	left: 70%;
-	top: 70%;
-	padding: 1% 2%;
-	opacity: 75%;
-}
-
-#musicButton:hover {
-	text-decoration-line: underline;
-}
-
-#title, .text {
-	color: sandybrown;
-	position: fixed;
-	top: 17%;
+#title, .menu {
+    color: sandybrown;
+    position: fixed;
+    top: 17%;
+    text-align: center;
+    margin: auto;
 }
 
 #title {
-	top: 5%;
-	left: 50%;
+    top: 5%;
+    margin: auto 50%;
 }
 
 #line {
-	position: fixed;
-	border-bottom: 2px solid sandybrown;
-	top: 15%;
-	left: 15%;
-	width: 75%;
+    position: fixed;
+    border-bottom: 2px solid sandybrown;
+    top: 15%;
+    left: 15%;
+    width: 75%;
 }
 
-.text {
-	font-size: large;
+.menu {
+    font-size: large;
 }
 
-.text:hover {
-	text-decoration-line: underline;
+.menu:hover {
+    text-decoration: underline;
 }
 
 #about {
-	left: 30%;
+    left: 30%;
 }
 
 #menu {
-	left: 45%;
+    left: 45%;
 }
 
 #shop {
-	left: 60%;
+    left: 60%;
 }
 
 #contact {
-	left: 75%;
+    left: 75%;
 }
 
 video {
-	position: fixed;
-	border: none;
-	top: 25%;
-	height: 50%;
+    position: fixed;
+    border: none;
+    top: 25%;
+    height: 50%;
 }
 
 #video1 {
-	left: 10%;
+    left: 10%;
 }
 
 #video2 {
-	top: 30%;
-	left: 45%;
+    top: 30%;
+    left: 45%;
 }
 
 #video3 {
-	left: 75%;
+    left: 75%;
+}
+
+#musicButton {
+    color: blue;
+    border: none;
+    position: fixed;
+    background-color: moccasin;
+    text-decoration: none;
+    right: 5%;
+    bottom: 22%;
+    padding: 1% 2%;
+    opacity: 75%;
+}
+
+#musicButton:hover {
+    text-decoration: underline;
 }

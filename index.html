@@ -1,32 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="html" lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta content="width=device-width" name="viewport">
-	<title> Chirag's Cafe 🍵 </title>
-	<script src="script.js" async></script>
-	<link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta content="width=device-width" name="viewport">
+    <title> Chirag's Cafe 🍵 </title>
+    <script async src="script.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 
-<body>
-	<h1 id="title"> Chirag's Cafe 🍵 </h1>
-	<div id="line"></div>
-	<table>
-		<tr id="menuRow">
-			<td class="text" id="about"> About </td>
-			<td class="text" id="menu"> Menu </td>
-			<td class="text" id="shop"> Shop </td>
-			<td class="text" id="contact"> Contact </td>
-		</tr>
-	</table>
-	<video autoplay controls id="video1" src="coffeeBrewing.mp4"></video>
-	<video autoplay controls id="video2" src="coffeeBeans.mp4"></video>
-	<video autoplay controls id="video3" src="coffeeFoaming.mp4"></video>
-	<audio id="audioLink" src="coffeeShopMusic.mp3"></audio>
-	<button id="musicButton" onclick="toggleMusic()" type="button">
-		Play: Coffee Shop Music
-	</button>
+<body id="body">
+<table>
+    <tr id="load"></tr>
+</table>
+<table id="table">
+    <tr>
+        <td>
+            <h1 id="title"> Chirag's Cafe 🍵 </h1>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div id="line"></div>
+        </td>
+    </tr>
+    <tr>
+        <td class="menu" id="about"> About</td>
+        <td class="menu" id="menu"> Menu</td>
+        <td class="menu" id="shop"> Shop</td>
+        <td class="menu" id="contact"> Contact</td>
+    </tr>
+    <tr>
+        <td>
+            <video autoplay controls id="video1" src="coffeeBrewing.mp4"></video>
+            <video autoplay controls id="video2" src="coffeeBeans.mp4"></video>
+            <video autoplay controls id="video3" src="coffeeFoaming.mp4"></video>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <audio id="audioLink" src="coffeeShopMusic.mp3"></audio>
+            <button id="musicButton" onclick="toggleMusic()" type="button">
+                Play: Coffee Shop Music
+            </button>
+        </td>
+    </tr>
+</table>
 </body>
-
 </html>
